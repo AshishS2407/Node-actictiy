@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+            text-align: center;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        #question-section {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .response-options {
+            margin: 25px auto;
+            width: 60%;
+            text-align: left;
+        }
+        #quiz-wrapper {
+            width: 70%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: darkslategray;
+            border-radius: 10px;
+        }
+        #proceed-btn {
+            display: block;
+            margin: 30px auto;
+            background-color: white;
+            color: darkslategray;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        #proceed-btn:hover {
+            background-color: lightgray;
+        }
+        #timer {
+            margin: 25px auto;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="points"></div>
+    <div id="feedback"></div>
+    <div id="quiz-wrapper">
+        <div id="question-holder">
+            <div id="question-section"></div>
+            <form id="response-form">
+                <div id="response-options" class="response-options" onclick="ansclick()"></div>
+            </form>
+        </div>
+        <button id="proceed-btn" onclick="nextQuestion()">Next</button>
+        <div id="timer"></div>
+    </div>
+</body>
+<script src="quiz.js"></script>
+
+</html>
+
